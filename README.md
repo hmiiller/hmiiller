@@ -65,17 +65,19 @@ const humberto = {
 
 ## 🚀 Sistemas Concluídos em Produção
 
-Soluções arquitetadas, desenvolvidas e implantadas em ambiente produtivo para operação corporativa e governamental (**SEDS-GO**):
+> **🔒 Aviso Institucional & Confidencialidade:**  
+> Os sistemas abaixo foram arquitetados e desenvolvidos para atender demandas e especificações internas da **Secretaria de Estado de Desenvolvimento Social de Goiás (SEDS-GO)**.  
+> Por razões de **segurança da informação, proteção de infraestrutura e governança institucional**, o código-fonte dessas aplicações é mantido exclusivamente em **ambiente/repositório privado**, não sendo publicado em repositórios públicos. As informações aqui apresentadas têm caráter estritamente demonstrativo de arquitetura e stack tecnológica, sem exposição de dados, credenciais ou endpoints internos.
 
-| Status | Sistema | Propósito & Impacto | Stack |
-| :---: | :--- | :--- | :--- |
-| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **ADMGOV** | Painel de telemetria e resiliência de servidores com integração **Zabbix 7.0** (JSON-RPC Bearer), alertas sonoros/visuais, terminal de logs PM2 filtrado e rotina automática de backups SQLite (retenção 7 dias). | `Next.js 15` `Prisma` `Zabbix 7.0` `PM2` |
-| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **SGC SEDS Mobile** | Aplicativo Web Progressivo (**PWA**) mobile-first integrado à API REST do GLPI: abertura guiada de chamados, upload em chunks via Redis, biometria/PIN, triagem por IA, carrossel de comunicados e painel de SLA. | `Next.js 15` `React 19` `Redis 7` `Docker` |
-| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **Monitor de SLAs GLPI** | Dashboard estilo **NOC** em tempo real para acompanhamento de SLAs de atendimento (TTO) e solução (TTR), com proxy seguro (Helmet/CSP), contadores ao vivo e matriz RBAC por perfil/entidade. | `Node.js` `Express` `Vanilla JS` `GLPI API` |
-| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **Auditor SLA Painel** | Plataforma full-stack em contêiner **Docker** para fiscalização de contratos de TI, auditoria de SLAs e cálculo de glosas no HUB TI com autenticação GLPI. | `React (Vite)` `Express` `PostgreSQL` `Docker` |
-| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **SEDS Hub TI - Reservas** | Gestão e agendamento de equipamentos tecnológicos com validação de choque de horário, controle de devoluções e autenticação centralizada via LDAP/GLPI. | `React 19` `TypeScript` `Prisma` `PostgreSQL` |
-| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **Monitoramento de Impressão** | Painel de telemetria em tempo real para servidores de impressão e níveis de toner via **PaperCut** e protocolo **SNMP**, com abertura automática de chamados no SGC/GLPI. | `React 19` `Tailwind v4` `Node.js` `SNMP` |
-| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **Atendimento WhatsApp Bot** | Plataforma multiusuário via WhatsApp (**Baileys**) com chatbot de IA, fila de atendimento em tempo real via WebSocket, notificações push, RBAC e histórico completo. | `Next.js 14` `Socket.io` `Baileys` `Drizzle` |
+| Status | Sistema | Propósito & Impacto | Stack | Acesso |
+| :---: | :--- | :--- | :--- | :---: |
+| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **ADMGOV** | Painel de telemetria e resiliência de servidores com integração **Zabbix 7.0** (JSON-RPC Bearer), alertas sonoros/visuais, terminal de logs PM2 filtrado e rotina automática de backups SQLite (retenção 7 dias). | `Next.js 15` `Prisma` `Zabbix 7.0` `PM2` | 🔒 Privado (SEDS-GO) |
+| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **SGC SEDS Mobile** | Aplicativo Web Progressivo (**PWA**) mobile-first integrado à API REST do GLPI: abertura guiada de chamados, upload em chunks via Redis, biometria/PIN, triagem por IA, carrossel de comunicados e painel de SLA. | `Next.js 15` `React 19` `Redis 7` `Docker` | 🔒 Privado (SEDS-GO) |
+| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **Monitor de SLAs GLPI** | Dashboard estilo **NOC** em tempo real para acompanhamento de SLAs de atendimento (TTO) e solução (TTR), com proxy seguro (Helmet/CSP), contadores ao vivo e matriz RBAC por perfil/entidade. | `Node.js` `Express` `Vanilla JS` `GLPI API` | 🔒 Privado (SEDS-GO) |
+| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **Auditor SLA Painel** | Plataforma full-stack em contêiner **Docker** para fiscalização de contratos de TI, auditoria de SLAs e cálculo de glosas no HUB TI com autenticação GLPI. | `React (Vite)` `Express` `PostgreSQL` `Docker` | 🔒 Privado (SEDS-GO) |
+| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **SEDS Hub TI - Reservas** | Gestão e agendamento de equipamentos tecnológicos com validação de choque de horário, controle de devoluções e autenticação centralizada via LDAP/GLPI. | `React 19` `TypeScript` `Prisma` `PostgreSQL` | 🔒 Privado (SEDS-GO) |
+| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **Monitoramento de Impressão** | Painel de telemetria em tempo real para servidores de impressão e níveis de toner via **PaperCut** e protocolo **SNMP**, com abertura automática de chamados no SGC/GLPI. | `React 19` `Tailwind v4` `Node.js` `SNMP` | 🔒 Privado (SEDS-GO) |
+| ![Prod](https://img.shields.io/badge/Produção-10B981?style=flat-square) | **Atendimento WhatsApp Bot** | Plataforma multiusuário via WhatsApp (**Baileys**) com chatbot de IA, fila de atendimento em tempo real via WebSocket, notificações push, RBAC e histórico completo. | `Next.js 14` `Socket.io` `Baileys` `Drizzle` | 🔒 Privado (SEDS-GO) |
 
 <details>
 <summary>🔍 <b>Ver detalhes de arquitetura e segurança aplicados nos sistemas</b></summary>
